@@ -1,0 +1,156 @@
+body {
+    margin: 1em 0;
+
+    background-color: #b7efb9;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: .75em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-add {
+    margin: auto;
+    margin-bottom: 2.5em;
+    
+    width: 45%;
+
+    padding: .25em;
+
+    max-width: 500px;
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.container-list {
+    margin: auto;
+    width: 50%;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    margin: auto;
+    padding: 0;
+
+    list-style: none;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+
+    margin-bottom: 1em;
+    padding: .5em 0;
+
+    background-color: #5489b1;
+}
+
+.list-item-check {
+    width: 5%;
+    margin: 0;
+
+    border: 0;
+    outline: none;
+}
+
+.list-item-check:checked {
+    accent-color: #bcf081;
+}
+
+.list-item-name {
+    width: 60%;
+    margin: 0;
+
+    color: white;
+}
+
+.list-item-name-completed {
+    text-decoration: line-through 2px #000;
+}
+
+.list-item-delete {
+    margin: auto 0;
+    border: 0;
+    
+    width: 10%;
+    min-height: 27px;
+
+    background-color: #e59191;
+    color: black;
+}
+
+.list-item-delete:hover {
+    background-color: #e9b0b0;
+}
+
+.add-input {
+    margin-bottom: 1em;
+    text-align: center;
+
+    padding: 1em 0;
+
+    border: 1px solid #707070;
+
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.add-input:focus {
+    outline: none;
+}
+
+.add-input:focus::placeholder {
+    color: transparent;
+}
+
+.add-button {
+    padding: 1em 0;
+    border: 0;
+    
+    background-color: #5489b1;
+    color: white;
+    
+    font-size: 1.25rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.add-button:hover {
+    background-color: #657c8e;
+}
+
+@media (max-width: 900px) {
+    .container-add {
+        width: 95%;
+        max-width: none;
+    }
+
+    .container-list {
+        width: 95%;
+        max-width: none;
+    }
+
+    .list {
+        width: 100%;
+        max-width: none;
+    }
+    
+    .list-item {
+        width: 100%;
+        max-width: none;
+    }
+}
